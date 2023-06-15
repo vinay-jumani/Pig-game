@@ -49,7 +49,7 @@ btnroll.addEventListener("click", function dicework() {
   console.log("button click");
   diceclick.classList.remove("hidden");
 
-  diceclick.src = `img/dice-${number}.png`;
+  diceclick.src = `dice-${number}.png`;
 
   if (score[activeplayer] >= 40) {
     playing = false;
