@@ -44,9 +44,8 @@ btnroll.addEventListener("click", function dicework() {
 
   let number = Math.trunc(Math.random() * 6 + 1);
 
-  console.log(number);
 
-  console.log("button click");
+
   diceclick.classList.remove("hidden");
 
   diceclick.src = `dice-${number}.png`;
@@ -65,7 +64,7 @@ btnroll.addEventListener("click", function dicework() {
       .classList.remove("player--active");
   } else if (playing) {
     if (activeplayer == 0) {
-      console.log("p1");
+ 
 
       if (number != 6) {
         score[activeplayer] += number;
@@ -78,7 +77,7 @@ btnroll.addEventListener("click", function dicework() {
         score[activeplayer] += number;
       }
     } else if (activeplayer == 1) {
-      console.log("p2");
+ 
       if (number != 6) {
         score[activeplayer] += number;
         activeplayer = 0;
